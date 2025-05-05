@@ -126,6 +126,7 @@ GEM
     jbuilder (2.13.0)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    js (2.7.1)
     json (2.11.3)
     kamal (2.5.3)
       activesupport (>= 7.0)
@@ -277,6 +278,11 @@ GEM
       rubocop-performance (>= 1.24)
       rubocop-rails (>= 2.30)
     ruby-progressbar (1.13.0)
+    ruby_wasm (2.7.1)
+    ruby_wasm (2.7.1-aarch64-linux)
+    ruby_wasm (2.7.1-aarch64-linux-musl)
+    ruby_wasm (2.7.1-x86_64-linux)
+    ruby_wasm (2.7.1-x86_64-linux-musl)
     rubyzip (2.4.1)
     securerandom (0.4.1)
     selenium-webdriver (4.32.0)
@@ -340,6 +346,10 @@ GEM
     unicode-emoji (4.0.4)
     uri (1.0.3)
     useragent (0.16.11)
+    wasmify-rails (0.2.3)
+      js (>= 2.6, < 3.0)
+      railties (>= 7.0, < 9.0)
+      ruby_wasm (>= 2.6, < 3.0)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -386,6 +396,7 @@ DEPENDENCIES
   thruster
   turbo-rails
   tzinfo-data
+  wasmify-rails (~> 0.2.3)
   web-console
 
 BUNDLED WITH
